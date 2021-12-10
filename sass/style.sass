@@ -1,0 +1,1503 @@
+body
+  background-color: #FFFFFF
+  font-family: 'Roboto', sans-serif
+  margin: 0 auto
+
+.banner
+  img
+    max-width: 100%
+  @media screen and (max-width: 500px)
+    padding: 0px
+    img
+      max-width: 100%
+      margin-left: 0px
+      margin-top: -30px
+
+.texthead
+  font-size: 2vw
+  position: absolute
+  left: 160px
+  top: 24px
+  text-align: center
+  margin: 0px
+  color: black
+  @media screen and (max-width : 500px)
+    display: none
+
+.centered
+  position: absolute
+  text-align: left
+  top: 170px
+  left: 173px
+  width: 892px
+  color: white
+  font-size: 3vw
+  @media screen and (max-width: 500px)
+    top: 80px
+    left: 100px
+    font-size: 3vw
+    margin-left: 60px
+    text-align: center
+    width: 312px
+
+.logohead
+  img
+    width: 138px
+    height: 60px
+    left: 200px
+    top: 14px
+    margin: 0px
+    padding: 10px 10px 10px 50px
+  @media screen and (max-width : 500px)
+    img
+      width: 68px
+      height: 33px
+      top: 14px
+      margin: 0px
+      padding: 10px
+
+.block
+  display: inline
+  float: left
+
+.menu
+  display: none
+  float: left
+  @media screen and (max-width : 500px)
+    display: inline
+    img
+      margin-top: 15px
+      margin-left: 360px
+      border: 0
+      background: transparent
+      position: relative
+
+#okno
+    max-width: 500px
+    height: 106px
+    text-align: center
+    padding: 0px
+    box-shadow: 0px 0px 20px  #C3C3C3
+    border-radius: 30px 30px 0px 0px
+    right: 0
+    bottom: 0
+    left: 0
+    margin: 0
+    background: white
+    position: fixed
+
+.pokno
+  text-align: center
+  padding-top: 24px
+  font-size: 18px
+
+.expose
+  position: static
+  cursor: pointer
+
+.expose1
+  position: relative
+  cursor: pointer
+
+#overlay
+  background: rgba(0,0,0,0.7)
+  display: none
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1
+  position: fixed
+
+#overlay1
+  background: rgba(0,0,0,0.7)
+  display: none
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1
+  position: fixed
+
+.link
+  text-decoration: none
+  color: black
+
+.button1
+  box-shadow: 0px 10px 40px  #C3C3C3
+  transform: translateY(0px)
+  transition: 0.5s linear
+  background: #82E0E4
+  border-radius: 18px
+  position: relative
+  cursor: pointer
+  outline: none
+  border: none
+  padding: 0px
+  margin: 0px
+  width: 333px
+  height: 92px
+  top: 440px
+  left: 0px
+  font-size: 1.5vw
+  @media screen and (max-width: 500px)
+    box-shadow: 0px 0px 10px  #C3C3C3
+    border-radius: 10px
+    width: 168px
+    height: 37px
+    top: 120px
+    left: 70px
+    font-size: 14px
+
+.button1:hover
+  background: #0BF5FF
+
+.gradient
+  background: linear-gradient(to bottom, #CBCBCB, #FFFFFF)
+  max-width: 100%
+  margin-top: -36px
+  margin-bottom: -170px
+  @media screen and (max-width: 500px)
+      width: 484px
+      height: 143px
+      margin-top: -17px
+      margin-bottom: -130px
+
+.textservis
+  font-size: 2vw
+  left: 550px
+  padding-top: 10px
+  top: 638px
+  text-align: center
+  @media screen and (max-width: 500px)
+    font-size: 2.5vw
+    padding-top: 8px
+    padding-left: 50px
+    text-align: left
+
+ul.a
+  margin: 0
+  padding: 0px
+
+ul.a li
+  display: inline
+  margin-right: -50px
+  padding: 70px
+  font-size: 1.68vw
+  @media screen and (max-width: 500px)
+    display: block
+    margin-right: 0px
+    padding: 3px
+    font-size: 2.5vw
+    text-align: left
+    padding-left: 50px
+
+%imgcard
+  display: inline-block
+  position: relative
+  overflow: hidden
+  max-width: 430px
+  @media screen and (max-width: 500px)
+    border-radius: 0px
+    margin-left: 20px
+    img
+      width: 430px
+      height: 220px
+
+.imgleft
+  @extend %imgcard
+  float: left
+  @media screen and (max-width: 500px)
+    img
+      margin-left: 20px
+
+
+.imgright
+  @extend %imgcard
+  float: right
+  @media screen and (max-width: 500px)
+    float: left
+    img
+      margin-left: 20px
+
+
+%cardinf
+    box-shadow: 0px 10px 40px  #C3C3C3
+    border-radius: 30px
+    height: 320px
+    max-width: 1040px
+    img
+      border-radius: 30px
+      max-width: 100%
+    @media screen and (max-width: 500px)
+      box-shadow: none
+      border-radius: none
+      height: 390px
+      width: 500px
+      img
+        border-radius: 0px
+
+#card
+  margin: 202px 60px 60px 60px
+  @extend %cardinf
+  @media screen and (max-width: 500px)
+    margin: 136px 0px 0px 0px
+
+
+#cardleft
+  margin: 60px
+  @extend %cardinf
+  @media screen and (max-width: 500px)
+    float: left
+    margin-left: 5px
+    margin-bottom: 5px
+
+#cardright
+  margin: 0px 0px 0px 300px
+  margin-right: 20px
+  @extend %cardinf
+  @media screen and (max-width: 500px)
+    float: left
+    margin: 0px
+    margin-bottom: -60px
+
+.details
+  position: relative
+  text-align: left
+  padding: 20px 0px 0px 30px
+  height: 100%
+  float: left
+  width: 548px
+  margin-bottom: -240px
+  @media screen and (max-width: 500px)
+    height: 158px
+
+%cardH1
+  display: inline-block
+  position: relative
+  font-size: 2.2vw
+  margin: 0
+  @media screen and (max-width: 500px)
+    margin-left: 20px
+    font-size: 3.2vw
+
+#cardleft .details h1
+  @extend %cardH1
+
+#cardright .details h1
+  @extend %cardH1
+
+#card .details h1
+  @extend %cardH1
+
+%cardP
+  text-align: left
+  font-size: 1.6vw
+  line-height: 1.5
+  @media screen and (max-width: 500px)
+    font-size: 2.5vw
+    width: 440px
+    margin-left: 20px
+
+#cardleft .details > p
+  @extend %cardP
+
+#cardright .details > p
+  @extend %cardP
+
+#card .details > p
+  @extend %cardP
+
+%controll
+  position: absolute
+  @media screen and (max-width: 500px)
+    left: 175px
+
+.controlleft
+  left: 136px
+  @extend %controll
+  @media screen and (max-width: 500px)
+        left: 175px
+
+.controlright
+  left: 141px
+  @extend %controll
+
+.button
+  box-shadow: 0px 10px 40px  #C3C3C3
+  transform: translateY(0px)
+  transition: 1s linear
+  background: #82E0E4
+  border-radius: 18px
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  outline: none
+  border: none
+  padding: 0px
+  margin: 0px
+  box-shadow: 20px
+  width: 320px
+  height: 60px
+  @media screen and (max-width: 500px)
+    box-shadow: 20px
+    width: 168px
+    height: 37px
+    border-radius: 10px
+    margin-left: -30px
+
+.button span
+  transition: transform 1s
+  display: inline-block
+  padding: 15px 20px
+  margin: 0px
+  font-size: 24px
+  @media screen and (max-width: 500px)
+    font-size: 14px
+    padding: 10px 10px
+
+.button .price .etc
+  color: black
+
+.button .etc
+  transform: translateX(-100%)
+  position: absolute
+  font-size: 24px
+  color: black
+  z-index: 1
+  left: 0
+  top: 0
+  @media screen and (max-width: 500px)
+    font-size: 14px
+
+.button:hover .price
+  transform: translateX(-600px)
+  @media screen and (max-width: 500px)
+    transform: translateX(-200px)
+
+.button:hover .etc
+  transform: translateX(80px)
+  @media screen and (max-width: 500px)
+    transform: translateX(35px)
+
+.gradient-text
+  background: linear-gradient(to bottom right, black, white)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+
+
+#footer
+    grid-area: footer
+    padding: 10px 0px 0px 0px
+    font-size: 2vw
+    background: #E7CC81
+    max-width: 1440px
+    height: 200px
+    @media screen and (max-width: 500px)
+      display: none
+
+.logo1
+  top: 2758px
+  padding-left: 335px
+  width: 46px
+  height: 60px
+  text-align: center
+
+.textfooter
+  font-size: 12px
+  text-align: left
+  top: 2891px
+  text-indent: 61px
+  padding-left: 186px
+  padding-top: 10px
+
+.textfooter3
+  font-size: 12px
+  width: 350px
+  padding-left: 150px
+  padding-top: 0px
+
+.footerimg
+  text-align: left
+  top: 2891px
+  text-indent: 61px
+  padding-left: 60px
+  margin-right: 194px
+  img
+    width: 35px
+    height: 35px
+
+.textfooter1
+  font-size: 14px
+  font-weight: bold
+  text-align: left
+  top: 2701px
+  text-indent: 867px
+  margin-left: 350px
+
+li
+  list-style-type: none
+  line-height: 1.8
+
+.textfooter2
+  font-size: 12px
+  text-align: left
+  top: 2891px
+  text-indent: 61px
+  padding-left: 928px
+  padding-top: 0px
+
+.block
+  display: inline
+  float: left
+
+hr
+  border: none
+  background-color: #989898
+  height: 1px
+  top: 125px
+
+.to-up
+  opacity: 1
+  position: fixed
+  bottom: 50px
+  right: 0px
+  margin-right: 50px
+  img
+      width: 50px
+      height: 50px
+  @media screen and (max-width: 1000px)
+    bottom: 10px
+    padding: 0px
+    left: 400px
+
+.to-upSmall
+  opacity: 1
+  position: fixed
+  padding: 20px
+  bottom: 50px
+  right: 20px
+  img
+      width: 50px
+      height: 50px
+  @media screen and (max-width: 1000px)
+    visibility: hidden
+
+
+.imgarrow
+  img
+    height: 130px
+    width: 48px
+  @media screen and (max-width: 500px)
+    img
+      height: 50px
+      width: 9px
+
+%arrows
+  cursor: pointer
+  position: absolute
+  padding-left: 20px
+  padding-right: 0px
+  padding-top: 7%
+  @media screen and (max-width: 500px)
+    top: 100%
+    position: absolute
+    padding-top: 80px
+
+
+
+.prev
+  @extend %arrows
+
+.next
+    @extend %arrows
+    padding-left: 970px
+    @media screen and (max-width: 500px)
+      padding-left: 420px
+
+
+
+
+.AQ
+  background-color: #E7CC83
+  margin-top: 10px
+  max-width: 1440px
+  height: 107px
+  margin-bottom: -50px
+  margin-top: -35px
+  @media screen and (max-width: 500px)
+    width: 500px
+    height: 57px
+    margin-top: -25px
+    margin-bottom: 10px
+
+.AQ >p
+  text-align: left
+  padding-left: 260px
+  font-size: 3vw
+  padding-top: 25px
+  @media screen and (max-width: 500px)
+    padding-left: 20px
+    font-size: 18px
+    padding-top: 18px
+
+.arrow
+  left: 0px
+  margin-left: 928px
+  position: absolute
+  transition: all 0.7s ease-in-out
+  @media screen and (max-width: 500px)
+    margin-left: 430px
+    width: 20px
+    height: 20px
+
+.hr-line
+  max-width: 800px
+  margin-left: 200px
+  @media screen and (max-width: 500px)
+      max-width: 450px
+      margin-left: 20px
+
+.AQP1
+  margin-top: 50px
+  @media screen and (max-width: 500px)
+    margin-top: 0px
+
+.AQP
+  cursor: pointer
+  padding: 30px 20px
+  width: 70%
+  border: none
+  outline: none
+  transition: 0.8s
+  margin-top: 0px
+  margin-left: 190px
+  margin-bottom: 0px
+  text-align: left
+  font-size: 24px
+  @media screen and (max-width: 500px)
+    font-size: 14px
+    margin-left: 5px
+    padding: 15px 20px
+
+.AQB
+  margin-top: -35px
+  text-align: left
+  max-width: 560px
+  margin-left: 190px
+  font-size: 18px
+  padding: 0 18px
+  background-color: white
+  display: none
+  overflow: hidden
+  @media screen and (max-width: 500px)
+    margin-left: 20px
+    font-size: 13px
+    padding: 15px 5px 0px
+    max-width: 420px
+    margin-top: -35px
+
+.AQP:after
+  position: absolute
+
+
+.logoheadCardSmall
+  img
+    opacity: 0
+  @media screen and (max-width : 500px)
+    img
+        width: 25px
+        height: 23px
+        left: 0px
+        top: 14px
+        margin: 0px
+        padding: 10px 10px 0px 20px
+        opacity: 1
+
+.CardSmall
+  img
+    opacity: 0
+  @media screen and (max-width : 500px)
+    img
+        width: 25px
+        height: 23px
+        margin: 0px
+        padding: 0px 50px 0px 0px
+        opacity: 1
+
+.small
+  background-color: white
+  @media screen and (max-width : 500px)
+    max-width: 480px
+    background-color: #C5C5C5
+
+
+#nav
+  margin-top: -40px
+  @media screen and (max-width : 500px)
+      margin-top: 10px
+
+.logoheadCard
+  img
+    width: 138px
+    height: 60px
+    left: 200px
+    top: 14px
+    margin: 0px
+    padding: 10px 10px 10px 50px
+  @media screen and (max-width : 500px)
+    img
+      display: none
+
+
+.galerea
+
+  padding-left: 200px
+  img
+      text-align: center
+      max-width:  1040px
+      border-radius: 46px
+  @media screen and (max-width: 500px)
+      padding-left: 20px
+      margin-right: 20px
+      img
+        text-align: left
+        width:  440px
+        height: 250px
+        border-radius: 20px
+
+.imgarrow
+  img
+    height: 130px
+    width: 48px
+  @media screen and (max-width: 500px)
+    img
+      height: 50px
+      width: 9px
+
+%arrows
+  cursor: pointer
+  position: absolute
+  top: 35%
+  margin-top: -50px
+  margin-right: 200px
+  @media screen and (max-width: 500px)
+    top: 21%
+    margin-right: 30px
+
+.prev
+
+  @extend %arrows
+
+.next
+    @extend %arrows
+
+
+
+.apicard
+  margin-bottom: 60px
+  border-radius: 30px
+  margin-left: 250px
+  box-shadow: 0px 10px 40px  #C3C3C3
+  @media screen and (max-width: 500px)
+      margin-bottom: 120px
+      border-radius: 20px
+      box-shadow: 0px 0px 40px  #C3C3C3
+      height: 240px
+      width: 440px
+      margin-left: 20px
+
+.road
+  text-align: center
+  font-size: 36px
+  margin-top: 10px
+  font-weight: normal
+  @media screen and (max-width: 500px)
+    font-size: 16px
+    margin-top: 130px
+
+.road1
+  text-align: left
+  font-size: 3vw
+  margin-top: -50px
+  padding-left: 130px
+  @media screen and (max-width: 500px)
+    font-size:  18px
+    margin-top: 10px
+    padding-left: 20px
+
+.serv
+  padding-left: 70px
+  margin-top: -46px
+  @media screen and (max-width: 500px)
+    display: none
+
+.serv1
+  padding-left: 70px
+  margin-top: -60px
+  @media screen and (max-width: 500px)
+    display: none
+
+.serv2
+  padding-left: 70px
+  margin-top: -55px
+  @media screen and (max-width: 500px)
+    display: none
+
+.serv3
+  padding-left: 70px
+  margin-top: -57px
+  @media screen and (max-width: 500px)
+    display: none
+
+.servis
+  text-align: left
+  font-size: 1.5vw
+  padding-left: 130px
+  img
+    width: 50px
+    height: 50px
+    margin-top: 5px
+  @media screen and (max-width: 500px)
+    visibility: hidden
+
+.servis1
+  text-align: left
+  font-size: 1.5vw
+  margin-left: 520px
+  margin-top: -270px
+  img
+    width: 50px
+    height: 50px
+    margin-top: 5px
+  @media screen and (max-width: 500px)
+      visibility: hidden
+
+
+ul.c
+  margin: 0
+  margin-top: -106px
+  margin-left: -20px
+
+ul.c li
+  visibility: hidden
+  @media screen and (max-width: 500px)
+    visibility: visible
+    display: inline-block
+    text-align: left
+    margin-left: 0px
+    margin-right: 10px
+    img
+      width: 25px
+
+.servisAdap
+  @media screen and (max-width: 500px)
+  img
+    width: 20px
+    height: 20px
+    margin-top: 5px
+
+.return
+  color: #148D00
+
+.money
+  color: #EA6200
+
+.centered
+  position: absolute
+  text-align: left
+  top: 170px
+  left: 173px
+  width: 892px
+  color: white
+  font-size: 48px
+  @media screen and (max-width: 500px)
+    top: 80px
+    left: 21px
+    font-size: 18px
+    text-align: center
+    width: 312px
+
+.textcontainer
+  position: inherit
+  text-align: left
+  margin-top: -150px
+  left: 140px
+  max-width: 731px
+  font-size: 1.5vw
+  margin-bottom: -260px
+  margin-left: 140px
+  @media screen and (max-width: 500px)
+    top: 450px
+    left: 20px
+    width: 430px
+    margin-left: 24px
+    font-size: 13px
+    margin-bottom: -130px
+    margin-top: -14px
+
+#oknoCard
+  visibility: hidden
+  @media screen and (max-width : 500px)
+    visibility: visible
+    width: 486px
+    height: 106px
+    text-align: center
+    padding: 0px
+    box-shadow: 0px 3px 10px  #C3C3C3
+    border-radius: 30px 30px 0px 0px
+    top: auto
+    right: 0
+    bottom: 0
+    left: 0
+    margin: 0
+    background: white
+    position: fixed
+
+#oknoCard >h1
+    @media screen and (max-width : 500px)
+      text-align: left
+      padding-top: 10px
+      padding-left: 40px
+      font-size: 18px
+
+.poknoCard
+  @media screen and (max-width : 500px)
+    text-align: left
+    margin-top: 0px
+    padding-left: 40px
+    font-size: 14px
+
+.buttonOkno
+  visibility: hidden
+  @media screen and (max-width: 500px)
+    visibility: visible
+    box-shadow: 0px 5px 10px  #C3C3C3
+    transform: translateY(0px)
+    transition: 0.5s linear
+    border: none
+    box-shadow: 20px
+    width: 168px
+    height: 37px
+    border-radius: 10px
+    margin-left: 150px
+    margin-top: -20px
+    cursor: pointer
+    outline: none
+    background: #82E0E4
+
+
+.buttonOkno:hover
+    background: #0BF5FF
+
+#oknoservis
+    width: 440px
+    height: 300px
+    text-align: center
+    left: 20px
+    box-shadow: 0px 0px 20px  #C3C3C3
+    border-radius: 20px
+    top: 180px
+    bottom: 0
+    margin-right: 20px
+    background: white
+    position: fixed
+
+#oknoservis1
+    width: 440px
+    height: 600px
+    text-align: center
+    left: 20px
+    box-shadow: 0px 0px 20px  #C3C3C3
+    border-radius: 20px
+    top: 180px
+    bottom: 0
+    margin-right: 20px
+    background: white
+    position: fixed
+
+
+.poknoservis
+  text-align: center
+  padding-top: 24px
+  font-size: 14px
+
+
+ul.b
+  margin: 0
+  padding-left: 15px
+  text-align: left
+
+
+ul.b li
+  @media screen and (max-width: 500px)
+    display: block
+    font-size: 14px
+    text-align: left
+
+
+.servb
+  @media screen and (max-width: 500px)
+      padding-left: 50px
+      margin-top: -32px
+      margin-bottom: -15px
+
+
+.Cancel
+  @media screen and (max-width: 500px)
+    margin-left: 340px
+    margin-top: 10px
+    cursor: pointer
+
+.Cancel1
+  @media screen and (max-width: 500px)
+    margin-left: 407px
+    padding-top: 40px
+    margin-top: -63px
+    cursor: pointer
+
+
+.Cancel2
+  @media screen and (max-width: 500px)
+    margin-left: 382px
+    padding-top: 40px
+    margin-top: -70px
+    cursor: pointer
+
+#buy
+  border-radius: 30px
+  box-shadow: 0px 0px 40px  #C3C3C3
+  margin-top: -450px
+  margin-left: 900px
+  max-width: 516px
+  margin-right: 10px
+  height: 647px
+  font-size: 2vw
+  @media screen and (max-width: 500px)
+      display: none
+
+#buy > h1
+  position: relative
+  text-align: center
+  padding: 20px 0px 0px 0px
+  font-size: 2.5vw
+  font-weight: normal
+
+#buy > p
+  position: relative
+  text-align: left
+  padding: 0px 0px 0px 30px
+  margin-bottom: 15px
+  font-size: 1.5vw
+  line-height: 0.5
+
+.buyHR
+  border: none
+  background-color: #989898
+  height: 1px
+  top: 125px
+  max-width: 390px
+  padding-left: 0px
+  padding-right: 0px
+  @media screen and (max-width: 500px)
+    display: none
+.to-upSmall
+  opacity: 1
+  position: fixed
+  padding: 20px
+  bottom: 50px
+  right: 20px
+  img
+      width: 50px
+      height: 50px
+  @media screen and (max-width: 1000px)
+    visibility: hidden
+
+
+
+#buy2
+  visibility: hidden
+  @media screen and (max-width: 500px)
+        visibility: visible
+        border-radius: 30px
+        background-color: white
+        box-shadow: 0px 0px 40px  #C3C3C3
+        margin-top: 18px
+        padding-top: 5px
+        margin-left: 20px
+        max-width: 516px
+        margin-right: 10px
+        height: 580px
+        font-size: 2vw
+
+
+#buy2 > h1
+  position: relative
+  text-align: center
+  padding: 0px 0px 0px 0px
+  font-size: 20px
+  font-weight: normal
+
+
+#buy2 > p
+  position: relative
+  text-align: left
+  padding: 0px 0px 0px 30px
+  margin-bottom: 15px
+  font-size: 18px
+  line-height: 0.5
+
+.buy2HR
+  visibility: hidden
+  @media screen and (max-width: 500px)
+    visibility: visible
+    border: none
+    background-color: #989898
+    height: 1px
+    top: 125px
+    max-width: 390px
+    padding-left: 0px
+    padding-right: 0px
+
+
+#buy3
+  visibility: hidden
+  @media screen and (max-width: 500px)
+        visibility: visible
+        border-radius: 30px
+        background-color: white
+        box-shadow: 0px 0px 40px  #C3C3C3
+        margin-top: 10px
+        padding-top: 0px
+        margin-left: 20px
+        max-width: 516px
+        margin-right: 10px
+        height: 580px
+        font-size: 2vw
+
+
+#buy3 > h1
+  position: relative
+  text-align: center
+  padding-top: 20px
+  font-size: 20px
+  font-weight: normal
+
+#buy3 > p
+  position: relative
+  text-align: left
+  padding: 0px 0px 0px 30px
+  margin-bottom: 15px
+  font-size: 18px
+  line-height: 0.5
+
+.buyHR3
+  visibility: hidden
+  @media screen and (max-width: 500px)
+    visibility: visible
+    border: none
+    background-color: #989898
+    height: 1px
+    top: 120px
+    max-width: 390px
+    padding-left: 0px
+    padding-right: 0px
+
+.calendar
+  border: 1px solid black
+  position: sticky
+  border-radius: 20px
+  max-width: 334px
+  height: 20px
+  font-size: 1.5vw
+  padding: 10px 20px 10px 70px
+  margin-left: 80px
+  margin-top: 20px
+  @media screen and (max-width: 500px)
+      font-size: 3.5vw
+      margin-left: 0px
+      padding: 10px 30px 10px 80px
+.btn2
+  position: relative
+  cursor: pointer
+  outline: none
+  border: 0
+  padding: 0px
+  padding-right: 10px
+  margin-left: 30px
+  width: 100px
+  height: 100px
+  margin-top: 0px
+  background: none
+  margin-right: -110px
+  @media screen and (max-width: 500px)
+        visibility: hidden
+
+
+.btn1
+  box-shadow: 0px 5px 10px  #C3C3C3
+  transform: translateY(0px)
+  transition: 0.5s linear
+  background: #82E0E4
+  border-radius: 30px
+  position: relative
+  cursor: pointer
+  outline: none
+  border: none
+  padding: 0px
+  padding-right: 10px
+  margin-left: 80px
+  width: 290px
+  height: 50px
+  top: 26px
+  left: 0px
+  font-size: 1.5vw
+  @media screen and (max-width: 500px)
+      visibility: hidden
+
+.btn1:hover
+  background: #0BF5FF
+
+
+.btn3
+  box-shadow: 0px 5px 10px  #C3C3C3
+  transform: translateY(0px)
+  transition: 0.5s linear
+  background: #82E0E4
+  border-radius: 30px
+  position: relative
+  cursor: pointer
+  outline: none
+  border: none
+  padding: 0px
+  padding-right: 10px
+  margin-left: 80px
+  width: 290px
+  height: 50px
+  top: 0px
+  left: 0px
+  font-size: 1.5vw
+  @media screen and (max-width: 500px)
+      visibility: hidden
+
+
+.btn3:hover
+  background: #0BF5FF
+
+
+  box-shadow: 0px 5px 10px  #C3C3C3
+  transform: translateY(0px)
+  transition: 0.5s linear
+  background: #82E0E4
+  border-radius: 30px
+  position: relative
+  cursor: pointer
+  outline: none
+  border: none
+  padding: 0px
+  padding-right: 10px
+  margin-left: 80px
+  width: 290px
+  height: 50px
+  top: 0px
+  left: 0px
+  font-size: 1.5vw
+
+
+.btn5
+  visibility: hidden
+  @media screen and (max-width: 500px)
+    visibility: visible
+    position: relative
+    cursor: pointer
+    outline: none
+    border: 0
+    padding: 0px
+    padding-right: 10px
+    margin-left: 30px
+    width: 50px
+    height: 50px
+    margin-top: 0px
+    background: none
+    margin-left: -140px
+    margin-right: 100px
+    margin-top: -30px
+
+
+.CardSmall
+  img
+    opacity: 0
+  @media screen and (max-width : 500px)
+    img
+        width: 25px
+        height: 23px
+        margin: 0px
+        padding: 0px 0px 0px 0px
+        opacity: 1
+
+
+
+.btn4
+  visibility: hidden
+  @media screen and (max-width: 500px)
+    visibility: visible
+    box-shadow: 0px 0px 10px  #C3C3C3
+    transform: translateY(0px)
+    transition: 0.5s linear
+    background: #82E0E4
+    border-radius: 20px
+    position: relative
+    cursor: pointer
+    outline: none
+    border: none
+    width: 200px
+    height: 42px
+    top: 20px
+    margin-left: 0px
+    font-size: 16px
+
+.btn4:hover
+  background: #0BF5FF
+
+
+.btn6
+  visibility: hidden
+  @media screen and (max-width: 500px)
+    visibility: visible
+    box-shadow: 0px 0px 10px  #C3C3C3
+    transform: translateY(0px)
+    transition: 0.5s linear
+    background: #82E0E4
+    border-radius: 20px
+    position: relative
+    cursor: pointer
+    outline: none
+    border: none
+    width: 200px
+    height: 42px
+    top: 0px
+    margin-left: 0px
+    font-size: 16px
+    margin-bottom: -8px
+
+
+.btn6:hover
+  background: #0BF5FF
+
+
+
+
+
+
+.inf
+  border-radius: 20px
+  width: 290px
+  height: 30px
+  margin-top: 0px
+  margin-left: 74px
+  margin-bottom: 22px
+  padding-left: 5px
+  font-size: 1.3vw
+  padding-top: 5px
+  padding-bottom: 5px
+  border: 1px solid black
+  text-align: center
+  @media screen and (max-width: 500px)
+      font-size: 3.5vw
+      margin-left: 18px
+      margin-right: 40px
+      margin-left: 40px
+      padding-top: 5px
+      padding-bottom: 5px
+      margin-bottom: 15px
+
+
+.confid
+  text-align: left
+  font-size: 1vw
+  padding-top: 60px
+  margin-top: -44px
+  padding-left: 36px
+  @media screen and (max-width: 500px)
+        font-size: 2.5vw
+.select-box
+  cursor: pointer
+  position : relative
+  border-radius: 20px
+  font-style: 1.5vw
+  max-width: 290px
+  margin-left: 80px
+  margin-top: 20px
+  @media screen and (max-width: 500px)
+    font-size: 18px
+
+.select,
+.label
+  color: black
+  display: block
+  font-style: 1.5vw
+  @media screen and (max-width: 500px)
+    font-size: 18px
+
+
+.select
+  width: 100%
+  position: absolute
+  top: 10px
+  font-size: 1.5vw
+  padding: 5px 0
+  height: 40px
+  opacity: 0
+  background: none transparent
+  border: 0 none
+  @media screen and (max-width: 500px)
+    font-size: 18px
+
+.select-box1
+  border: 1px solid black
+  border-radius: 20px
+
+
+.label
+  position: relative
+  text-align: center
+  padding: 8px 20px
+  cursor: pointer
+  font-size: 1.5vw
+  @media screen and (max-width: 500px)
+    font-size: 18px
+
+.open .label::after
+   content: "▲"
+
+.label::after
+  content: "▼"
+  font-size: 20px
+  position: absolute
+  right: 0
+  top: 0
+  padding: 10px 22px
+
+
+
+.number
+  display: inline-block
+  position: relative
+  width: 140px
+  margin-left: 260px
+  margin-top: -50px
+
+.number input[type="number"]
+  display: block
+  height: 40px
+  line-height: 32px
+  width: 100%
+  padding: 0
+  margin: 0
+  font-size: 1.8vw
+  box-sizing: border-box
+  text-align: center
+  border: none
+  appearance: textfield
+  @media screen and (max-width: 500px)
+    font-size: 18px
+
+%number
+  bottom: 1px
+  width: 40px
+  padding: 0
+  display: block
+  background-color: #E7CC83
+  text-align: center
+  border: none
+  border-right: 1px solid #ddd
+  border-radius: 16px
+  font-size: 16px
+  font-weight: 600
+  position: absolute
+  top: 1px
+  cursor: pointer
+
+.number-minus
+  @extend %number
+  left: 1px
+
+
+.number-plus
+  @extend %number
+  right: 11px
+.Box
+  padding-left: 126px
+  margin-top: -72px
+  cursor: pointer
+  @media screen and (max-width: 500px)
+      padding-left: 116px
+      margin-top: -68px
+      cursor: pointer
+
+
+
+
+#buy1
+  border-radius: 30px
+  box-shadow: 0px 0px 40px  #C3C3C3
+  margin-top: -450px
+  margin-left: 900px
+  max-width: 516px
+  margin-right: 10px
+  height: 647px
+  font-size: 2vw
+  @media screen and (max-width: 500px)
+    display: none
+
+#buy1 > h1
+  position: relative
+  text-align: center
+  padding: 20px 0px 0px 0px
+  font-size: 2.5vw
+  font-weight: normal
+
+#buy1 > p
+  position: relative
+  text-align: left
+  padding: 0px 0px 0px 30px
+  margin-bottom: 15px
+  font-size: 1.5vw
+  line-height: 1
+
+.displayBuy
+  margin-left: 235px
+  font-size: 1.5vw
+  margin-top: -39px
+  @media screen and (max-width: 500px)
+    font-size: 18px
+
+.buyHR1
+  border: none
+  background-color: #989898
+  height: 1px
+  top: 125px
+  margin-top: -12px
+  margin-bottom: -5px
+  max-width: 390px
+  padding-left: 0px
+  padding-right: 0px
+  @media screen and (max-width: 500px)
+    display: none
+
+
+#oknoservis1
+    width: 440px
+    height: 300px
+    text-align: center
+    left: 20px
+    box-shadow: 0px 0px 20px  #C3C3C3
+    border-radius: 20px
+    top: 180px
+    bottom: 0
+    margin-right: 20px
+    background: white
+    position: fixed

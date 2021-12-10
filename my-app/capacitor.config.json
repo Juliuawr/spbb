@@ -1,0 +1,11 @@
+{
+  "appId": "com.lolo.spb",
+  "appName": "spb",
+  "bundledWebRuntime": true,
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

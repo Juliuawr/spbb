@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Мосты Санкт-Петербурга</title>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/1.js"></script>
+</head>
+<body>
+  <header >
+    <div  class="logoheadCard ">
+      <a class="link" href="index.html">
+        <img src="img/logo.jpg" alt="Logo"></img>
+        <p class="texthead">Мосты Санкт-Петербурга</p>
+      </a>
+    </div>
+    <div  class="logoheadCardSmall">
+      <a class="link" href="index.html">
+        <img src="img/UpArrow.png" alt="Arrow"></img>
+        <hr class="small">
+      </a>
+    </div>
+  </header>
+  <nav id="nav" >
+    <div class="galerea">
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/2/1.jpg" >
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/2/2.jpg" >
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/2/3.jpg" >
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img src="img/2/4.jpg" >
+      </div>
+      <div class="imgarrow">
+        <a class="prev" onclick="plusSlides(-1)"><img src="img/Vector 7.png"> </img></a>
+        <a class="next" onclick="plusSlides(1)"><img src="img/Vector 6.png" > </img></a>
+      </div>
+    </div>
+  </nav>
+
+
+  <article>
+    <div id="oknoCard">
+      <h1 >Билеты</h1>
+      <p class="poknoCard  block"> От 900 руб</p>
+      <div>
+        <button  class="buttonOkno block expose1 ">Купить</button>
+
+        <div id="overlay1">
+
+          <div id="buy2" >
+
+            <h1>Выбор билета  <div id="close" class="Cancel1 block"> <img src="img/Cancel.png"  alt="Cancel"></img></div></h1>
+            <p>Взрослый</p>
+            <p><b>1440 руб</b></p>
+            <div class="number block">
+              <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+              <input id="inputText" type="number" min="0 "max="6"  value="0" readonly onkeyup="myDisplay(this.value)" >
+              <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+            </div>
+            <hr class="buy2HR">
+            <p>Льготный</p>
+            <p><b>1170 руб</b></p>
+            <img class="Box block" src="img/Box.png"  alt="Box" title="На входе необходимо предъявить документ, подтверждающий льготу"></img>
+            <div class="number block">
+              <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+              <input id="inputText1" type="number" min="0 "max="6"  value="0" readonly onkeyup="myDisplay1(this.value)" >
+              <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+            </div>
+            <hr class="buy2HR">
+            <p>Детский до 12 лет</p>
+            <p><b>810 руб</b></p>
+            <div class="number block">
+              <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+              <input id="inputText2" type="number" min="0 "max="6"  value="0" readonly onkeyup="myDisplay2(this.value)" >
+              <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+            </div>
+            <hr class="buy2HR">
+            <p>Детский до 5 лет</p>
+            <p><b>Бесплатно</b></p>
+            <div class="number block">
+              <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+              <input id="inputText3" type="number" min="0 "max="6"  value="0" readonly onkeyup="myDisplay3(this.value)" >
+              <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+            </div>
+            <input id="inputText4" class="calendar" type="date" name="calendar" onkeyup="myDisplay4(this.value)">
+            <div  class="select-box"  >
+              <label for="select-box1" class="label select-box1"><span class="label-desc">Причал отправления</span> </label>
+              <select id="select-box1" class="select" onkeyup="myDisplay5(this.value)">
+                <option value="Аничков мост">Аничков мост</option>
+                <option value="Мост Ломоносова" disabled selected>Мост Ломоносова</option>
+              </select>
+
+              <script>
+                 $("select").on("click" , function() {$(this).parent(".select-box").toggleClass("open");});
+                   $(document).mouseup(function (e){var container = $(".select-box");
+                 if (container.has(e.target).length === 0)
+                   {container.removeClass("open");}});
+                   $("select").on("change" , function() {
+                   var selection = $(this).find("option:selected").text(),
+                   labelFor = $(this).attr("id"),
+                   label = $("[for='" + labelFor + "']");
+                   label.find(".label-desc").html(selection);});
+                </script>
+
+            </div>
+               <button class="btn4" >Продолжить покупку</button>
+             </div>
+
+
+             <div id="buy3">
+               <h1>
+                 <button class="btn5 CardSmall " >
+                   <img src="img/w.png" alt="Arrow"></img>
+                 </button> Покупка
+                 <div id="close1" class="Cancel2 ">
+                   <img src="img/Cancel.png"  alt="Cancel"></img>
+                 </div>
+               </h1>
+               <p>Выбранные билеты</p>
+               <p>Взрослый <div class="displayBuy block"  id="displayQuestion"></div></p>
+               <hr class="buyHR3">
+               <p>Льготный <div class="displayBuy block" id="displayQuestion1"></div></p>
+               <hr class="buyHR3">
+               <p>Детский до 12 лет<div class="displayBuy block"  id="displayQuestion2"></div></p>
+               <hr class="buyHR3">
+               <p>Детский до 5 лет<div class="displayBuy block"  id="displayQuestion3"></div></p>
+               <hr class="buyHR3">
+               <p>Дата<div class="displayBuy block"  id="displayQuestion4"></div></p>
+               <hr class="buyHR3">
+               <p>Причал<div class="displayBuy block"  id="displayQuestion5"></div></p>
+               <input class="inf" type="text" name="tel" placeholder="+7(000)000-00-00"><br>
+               <input class="inf" type="text" name="tel" placeholder="test@mail.ru"><br>
+               <a class="link" target="_blank" href="https://www.google.ru/">
+                 <button class="btn6"  >Оплатить</button>
+               </a>
+               <div class="confid">Вы соглашаетесь <span style="color:#5D5FEF;">с политикой конфиденциальности и обработкой персональных данных.</span> </div>
+               </div>
+             </div>
+
+             <script>
+              $(document).ready(function () {
+              $("#buy3").hide();
+                 $(".btn4").click(function () {
+                     $("#buy2").hide();
+                     $("#buy3").show()
+                 });
+                 $(".btn5").click(function () {
+                     $("#buy3").hide();
+                     $("#buy2").show()
+                   });
+                 });
+               </script>
+
+
+</div>
+
+</div>
+
+
+    <h1 class="road1">Романтическая прогулка</h1>
+
+
+      <ol class="servis">
+        <img src="img/Clock.png"  alt="Clock"> <p class="serv">Продолжительность 2 часа</p></li>
+        <li><img src="img/Bar.png"  alt="Bar"><p class="serv1"> Бар(напитки и закуски)</p></li>
+        <li class="return"><img src="img/Return.png"  alt="Return"> <p class="serv2">Бесплатный возврат за 3 часа до рейса</p></li>
+        <li class="money"> <img src="img/Money.png"  alt="Money"><p class="serv3"> Цены ниже</p></li>
+      </ol>
+
+      <ol class="servis1">
+        <img src="img/Music.png"  alt="Music"> <p class="serv">Живая музыка</p></li>
+        <li><img src="img/Toilet.png"  alt="Toilet"><p class="serv1"> Туалет</p></li>
+      </ol>
+
+
+      <ul  class="c">
+        <li><img src="img/Clock.png"   alt="Clock"></img></li>
+        <li><img src="img/Bar.png"     alt="Bar"></img></li>
+        <li> <img src="img/Music.png"  alt="Music"></img></li>
+        <li><img src="img/Toilet.png"  alt="Toilet"></img></li>
+        <li><img src="img/Return.png"  alt="Return"></img></li>
+        <li> <img src="img/Money.png"  alt="Money"></img></li>
+        <li>
+          <button  class="expose arr" style="border: 0; background: transparent">
+            <img src="img/arrowright.png" width="20" height="20" alt="submit" />
+          </button>
+          <div id="overlay">
+            <div id="oknoservis">
+            <div class="Cancel"> <img src="img/Cancel.png"  alt="Cancel"></img></div>
+            <ul  class="b">
+             <li><img src="img/Clock.png"   alt="Clock"></img><p class="servb">Продолжительность 2 часа</p></li></br>
+             <li><img src="img/Bar.png"     alt="Bar"></img><p class="servb"> Бар(напитки и закуски)</p></li></br>
+             <li><img src="img/Music.png"  alt="Music"></img><p class="servb">Живая музыка</p></li></br>
+             <li><img src="img/Toilet.png"  alt="Toilet"></img><p class="servb"> Туалет</p></li></br>
+             <li class="return"><img src="img/Return.png"  alt="Return"></img> <p class="servb">Бесплатный возврат за 3 часа до рейса</p></li></br>
+             <li class="money"> <img src="img/Money.png"  alt="Money" ></img><p class="servb"> Цены ниже</p></li></br>
+            </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class = "textcontainer ">
+        <p>
+        Ночная музыкальная прогулка под разводку мостов – одна из самых популярных в Петербурге. Её выбирают влюбленные пары,
+        городские романтики и мечтатели. Волшебные звуки саксофона наполнят каналы и набережные особенным очарованием. Вы убедитесь,
+         что ночь для саксофона – самое правильное время суток, а его мелодии идеально дополняют красоту и величие спящей Северной столицы.
+       </p>
+     </div>
+
+
+
+
+     <div id="buy">
+
+       <h1>Выбор билета</h1>
+       <p>Взрослый</p>
+       <p><b>1440 руб</b></p>
+       <div class="number block">
+         <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+         <input id="inputText" type="number" min="0 "max="6"  value="0" readonly onkeyup="myDisplay(this.value)" >
+         <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+       </div>
+       <hr class="buyHR">
+       <p>Льготный</p>
+       <p><b>1170 руб</b></p>
+       <img class="Box block" src="img/Box.png"  alt="Box" title="На входе необходимо предъявить документ, подтверждающий льготу"></img>
+       <div class="number block">
+         <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+         <input id="inputText1" type="number" min="0 "max="6"  value="0" readonly onkeyup="myDisplay1(this.value)" >
+         <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+       </div>
+       <hr class="buyHR">
+       <p>Детский до 12 лет</p>
+       <p><b>810 руб</b></p>
+       <div class="number block">
+         <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+         <input id="inputText2" type="number" min="0 "max="6"  value="0" readonly onkeyup="myDisplay2(this.value)" >
+         <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+       </div>
+       <hr class="buyHR">
+       <p>Детский до 5 лет</p>
+       <p><b>Бесплатно</b></p>
+       <div class="number block">
+         <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+         <input id="inputText3" type="number" min="0 "max="6"  value="0" readonly onkeyup="myDisplay3(this.value)" >
+         <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+       </div>
+       <input id="inputText4" class="calendar" type="date" name="calendar" onkeyup="myDisplay4(this.value)">
+
+       <div  class="select-box"  >
+         <label for="select-box1" class="label select-box1"><span class="label-desc">Причал отправления</span> </label>
+
+
+         <select id="select-box1" class="select" onkeyup="myDisplay5(this.value)">
+           <option value="Аничков мост">Аничков мост</option>
+           <option value="Мост Ломоносова" disabled selected>Мост Ломоносова</option>
+         </select>
+
+
+         <script>
+           $("select").on("click" , function() {$(this).parent(".select-box").toggleClass("open");});
+           $(document).mouseup(function (e){var container = $(".select-box");
+           if (container.has(e.target).length === 0)
+           {container.removeClass("open");}});
+           $("select").on("change" , function() {
+           var selection = $(this).find("option:selected").text(),
+           labelFor = $(this).attr("id"),
+           label = $("[for='" + labelFor + "']");
+           label.find(".label-desc").html(selection);});
+         </script>
+       </div>
+       <button class="btn1" >Продолжить покупку</button>
+     </div>
+     <div>
+
+       <div id="buy1">
+         <button class="btn2 block" ><img src="img/w.png" alt="Arrow"></img></button>
+         <h1>Покупка</h1>
+         <p>Выбранные билеты</p>
+         <p>Взрослый <div class="displayBuy block"  id="displayQuestion"></div></p>
+         <hr class="buyHR1">
+         <p>Льготный <div class="displayBuy block" id="displayQuestion1"></div></p>
+         <hr class="buyHR1">
+         <p>Детский до 12 лет<div class="displayBuy block"  id="displayQuestion2"></div></p>
+         <hr class="buyHR1">
+         <p>Детский до 5 лет<div class="displayBuy block"  id="displayQuestion3"></div></p>
+         <hr class="buyHR1">
+         <p>Дата<div class="displayBuy block"  id="displayQuestion4"></div></p>
+         <hr class="buyHR1">
+         <p>Причал<div class="displayBuy block"  id="displayQuestion5"></div></p>
+         <input class="inf" type="text" name="tel" placeholder="+7(000)000-00-00"><br>
+         <input class="inf" type="text" name="tel" placeholder="test@mail.ru">
+         <a class="link" target="_blank" href="https://www.google.ru/">
+           <button class="btn3"  >Оплатить</button>
+         </a>
+         <div class="confid">Вы соглашаетесь <span style="color:#5D5FEF;">с политикой конфиденциальности и обработкой персональных данных.</span> </div>
+         </div>
+       </div>
+
+        <script>
+         $(document).ready(function () {
+         $("#buy1").hide();
+            $(".btn1").click(function () {
+                $("#buy").hide();
+                $("#buy1").show()
+            });
+            $(".btn2").click(function () {
+                $("#buy1").hide();
+                $("#buy").show()
+              });
+            });
+          </script>
+
+
+
+
+
+     <script>
+       function myDisplay(e) {
+          var input = document.getElementById('inputText').value;
+          var showQuestion = document.getElementById('displayQuestion');
+          showQuestion.innerHTML = input;
+        }
+     </script>
+     <script>
+      function myDisplay1(e) {
+          var input = document.getElementById('inputText1').value;
+          var showQuestion = document.getElementById('displayQuestion1');
+          showQuestion.innerHTML = input;
+        }
+     </script>
+     <script>
+         function myDisplay2(e) {
+           var input = document.getElementById('inputText2').value;
+           var showQuestion = document.getElementById('displayQuestion2');
+           showQuestion.innerHTML = input;
+         }
+       </script>
+
+       <script>
+                function myDisplay3(e) {
+                    var input = document.getElementById('inputText3').value;
+                    var showQuestion = document.getElementById('displayQuestion3');
+                    showQuestion.innerHTML = input;
+                  }
+      </script>
+      <script>
+                function myDisplay4(e) {
+                    var input = document.getElementById('inputText4').value;
+                    var showQuestion = document.getElementById('displayQuestion4');
+                    showQuestion.innerHTML = input;
+                  }
+      </script>
+      <script>
+          function myDisplay5() {
+            var input = document.getElementById('select-box1');
+            var select = input.value;
+            var showQuestion = document.getElementById('displayQuestion5');
+            showQuestion.innerHTML = select ;
+            }
+       </script>
+
+     <h2 class="road">Маршрут</h2>
+     <iframe class="apicard" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9b55bdadb3353d3e4d3146c6b01356770f5df649248cca25a07eae28ea98765f&amp;source=constructor" width="849" height="520" frameborder="0"></iframe>
+   </article>
+
+
+
+
+
+
+
+          <footer id="footer">
+            <div>
+              <div class="logo1 textfooter3 block" >
+                <img src="img/logo1.png" alt="Logo"></img>
+                <p >Мосты Санкт-Петербурга</p>
+              </div>
+              <div class="textfooter2 ">
+                <ul>
+                  <li><a class="link" href="asq.html"><b class="a">Частые вопросы</b><a /> </li>
+                  <li ><a class="link" href="https://www.ups.com/ru/ru/help-center/legal-terms-conditions/website.page">Условия пользования <a /></li>
+                  <li><a class="link" href="https://www.ipay.ua/ru/faq/answer-3">Безопасность платежей<a /></li>
+                  <li><a class="link" href="https://e-kontur.ru/enquiry/1318/privacy">Политика конфиденциальности<a /></li>
+                  <li><a class="link" href="https://profi-mag.com/help/warranty/">Политика возврата     <a /></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div >
+              <div class="textfooter block ">@2021, Мосты Санкт-Петербурга</div>
+              <div class="footerimg block">
+                <a class="link" href="https://vk.com/feed"><img src="img/vk.png"  alt="Vkontakte" ></a>
+                <a class="link" href="https://ru-ru.facebook.com/?nocaa=1"><img src="img/facebook.png"  alt="facebook"></a>
+                <a class="link" href="https://www.instagram.com/"><img src="img/Instagram.png"  alt="Instagram"></a>
+                <a class="link" href="https://tlgrm.ru/"><img src="img/Telegram.png"  alt="Telegram"></a>
+              </div>
+              <div class="footerimg block">
+                <img  src="img/mastercard.png"  alt="mastercard" >
+                <img src="img/visa.png"  alt="visa">
+              </div>
+            </div >
+            </footer>
+            <div class="to-upSmall">
+              <img src="img/Scroll.png"  alt="Scroll">
+            </div>
+              <script src="js/1.js"></script>
+          </body>
+        </html>
