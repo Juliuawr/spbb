@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">spbb</string>
+    <string name="title_activity_main">spbb</string>
+    <string name="package_name">com.Juliuawr.spbb</string>
+    <string name="custom_url_scheme">com.Juliuawr.spbb</string>
+</resources>
